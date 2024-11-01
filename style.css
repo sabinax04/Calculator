@@ -1,0 +1,111 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./Vector\ 1.svg);
+  background-repeat: no-repeat;
+  background-position-x: 25%;
+  background-position-y: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", serif;
+}
+
+.container {
+  background-color: #323232;
+  width: 414px;
+  height: 736px;
+  margin-top: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -5px 5px 8px 0px #0000004d;
+}
+
+.second-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.button {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  border: none;
+  background-color: #f8f8f8;
+  font-size: 30px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.line {
+  border: 1px solid #74ebd5;
+  width: 310px;
+}
+
+.line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.different {
+  background-color: #74ebd5;
+  color: #fff;
+}
+
+.calculation {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 8rem;
+}
+
+.input {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: right;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}
+
+.operation {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.p-operation {
+  display: flex;
+  width: 74%;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 8rem;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 8rem;
+  gap: 3rem;
+  width: 100%;
+  margin-left: 8rem;
+}
+

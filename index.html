@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Calculator</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-container">
+        <div class="calculation"></div>
+
+        <div class="p-operation">
+          <div class="operation"></div>
+          <div class="input"></div>
+        </div>
+      </div>
+
+      <div class="line-container">
+        <div class="line"></div>
+        <div class="second-container">
+          <button class="button different" id="clearAll">C</button>
+          <button class="button different" id="division">/</button>
+          <button class="button different" id="percent">%</button>
+          <button class="button different" id="multiple">X</button>
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button different" id="plus-minus">
+            <i class="fa-solid fa-plus-minus"></i>
+          </button>
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button different" id="subtraction">-</button>
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button different" id="plus">+</button>
+          <button class="button">.</button>
+          <button class="button">0</button>
+          <button class="button different" id="clear">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="button different" id="equal">=</button>
+        </div>
+      </div>
+    </div>
 
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
