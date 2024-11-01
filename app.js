@@ -2,15 +2,16 @@ const calculationDisplay = document.querySelector(".calculation");
 const operationDisplay = document.querySelector(".operation");
 const inputDisplay = document.querySelector(".input");
 
-
 let currentInput = "";
 let operator = "";
 let operand1 = null;
 
 document.querySelectorAll(".button").forEach((button) => {
   button.addEventListener("click", () => {
-   
     if (button.id === "clear" || button.id === "equal" || button.classList.contains("different")) return;
+
+    if (button.textContent === "." && currentInput.includes(".")) return;
+
     currentInput += button.textContent; 
     inputDisplay.textContent = currentInput; 
   });
@@ -45,7 +46,6 @@ document.querySelectorAll(".different").forEach((button) => {
     }
   });
 });
-
 
 function setOperator(op) {
   if (currentInput === "") return; 
@@ -127,4 +127,5 @@ function getOperatorSymbol(op) {
 }
 
 document.getElementById("equal").addEventListener("click", calculate);
+
 
