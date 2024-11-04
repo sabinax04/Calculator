@@ -10,6 +10,9 @@ document.querySelectorAll(".button").forEach((button) => {
   button.addEventListener("click", () => {
     if (button.id === "clear" || button.id === "equal" || button.classList.contains("different")) return;
 
+    
+    if (currentInput === "0" && button.textContent === "0") return;
+    
     if (button.textContent === "." && currentInput.includes(".")) return;
 
     currentInput += button.textContent; 
@@ -77,9 +80,12 @@ function calculate() {
       return;
   }
 
+ 
+  result = parseFloat(result.toFixed(10));
+
   inputDisplay.textContent = result;
   calculationDisplay.textContent = `${operand1} ${operationDisplay.textContent} ${operand2}`; 
-  operationDisplay.textContent = `=`; 
+  operationDisplay.textContent = "="; 
   currentInput = result.toString(); 
   operator = ""; 
   operand1 = null; 
@@ -127,5 +133,3 @@ function getOperatorSymbol(op) {
 }
 
 document.getElementById("equal").addEventListener("click", calculate);
-
-
